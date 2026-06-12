@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Hotel Reservas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu-lateral">
+        <h2>🏨 Hotel Reservas</h2>
+        <a href="index.html">Quartos</a>
+        <a href="reservas.html" class="ativo">Reservas</a>
+        <a href="#">Sobre</a>
+    </nav>
+
+    <main class="conteudo">
+        <div class="cabecalho">
+            <div>
+                <h1 id="tituloQuarto">Reservas do Quarto</h1>
+                <p id="tipoQuarto"></p>
+            </div>
+            <button onclick="abrirCadastroReserva()" class="botao-principal">+ Nova Reserva</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Hóspede</th>
+                    <th>Entrada</th>
+                    <th>Saída</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="listaReservas"></tbody>
+        </table>
+
+        <button onclick="voltarQuartos()" class="botao-secundario">← Voltar</button>
+    </main>
+
+    <!-- Modal Cadastro Reserva -->
+    <div id="modalReserva" class="modal">
+        <div class="modal-conteudo">
+            <h3>Cadastro de Reserva</h3>
+            <p>Quarto: <span id="infoQuarto"></span></p>
+            
+            <div class="campo">
+                <label>Nome do Hóspede:</label>
+                <input type="text" id="hospede" placeholder="Ex: João da Silva">
+            </div>
+
+            <div class="campo">
+                <label>Data de Entrada:</label>
+                <input type="date" id="entrada">
+            </div>
+
+            <div class="campo">
+                <label>Data de Saída:</label>
+                <input type="date" id="saida">
+            </div>
+
+            <div class="campo">
+                <label>Id Quarto:</label>
+                <input type="number" id="id-quarto">
+            </div>
+
+            <div class="botoes">
+                <button onclick="cadastrarReserva()" class="botao-principal">Cadastrar Reserva</button>
+                <button onclick="fecharModalReserva()" class="botao-secundario">Voltar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

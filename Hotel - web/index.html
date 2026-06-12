@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu-lateral">
+        <h2>🏨 Hotel Reservas</h2>
+        <a href="index.html" class="ativo">Quartos</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="#">Sobre</a>
+    </nav>
+
+    <main class="conteudo">
+        <div class="cabecalho">
+            <div>
+                <h1>Quartos Cadastrados</h1>
+                <p>Gerencie os quartos do hotel</p>
+            </div>
+            <button onclick="abrirCadastroQuarto()" class="botao-principal">+ Novo Quarto</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>N° Quarto</th>
+                    <th>Tipo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="listaQuartos"></tbody>
+        </table>
+    </main>
+
+    <!-- Modal Cadastro Quarto -->
+    <div id="modalQuarto" class="modal">
+        <div class="modal-conteudo">
+            <h3>Cadastro de Quarto</h3>
+            <p>Informe os dados do novo quarto</p>
+            
+            <div class="campo">
+                <label>Número do Quarto:</label>
+                <input type="text" id="numero" placeholder="Ex: 101">
+            </div>
+
+            <div class="campo">
+                <label>Tipo do Quarto:</label>
+                <select id="tipo">
+                    <option value="Standard">Standard</option>
+                    <option value="Luxo">Luxo</option>
+                    <option value="Suíte">Suíte</option>
+                    <option value="Suíte">Suíte Master</option>
+                    <option value="Suíte">Individual</option>
+                </select>
+            </div>
+
+            <div class="botoes">
+                <button onclick="cadastrarQuarto()" class="botao-principal">Cadastrar</button>
+                <button onclick="fecharModalQuarto()" class="botao-secundario">Voltar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
