@@ -134,15 +134,17 @@ npm start
 
 ## 📸 Protótipos
 
+![Protótipo do sistema - Referência](./wireframes/Protótipo%20do%20sistema%20-%20referencia.png)
+
 ### Tela de Quartos
 
-
-![Quartos Cadastrados](./wireframes/cadastro%20de%20quartos%20.png)
-
+![Quartos Cadastrados](./wireframes/Quartos%20cadastrados.png)
+![Modal de Cadastro dos quartos](./wireframes/cadastro%20de%20quartos%20.png)
 
 ### Tela de Reservas
 
-
+![Reservas dos quartos](./wireframes/Reservas%20dos%20quartos.png)
+![Cadastros de reservas](./wireframes/cadastro%20de%20reservas.png)
 
 ## 📖 Documentação
 
