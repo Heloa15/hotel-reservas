@@ -137,7 +137,7 @@ npm start
 ### Tela de Quartos
 
 
-![Quartos Cadastrados](./wireframes/Quartos cadastrados.png)
+![Quartos Cadastrados](./wireframes/cadastro%20de%20quartos%20.png)
 
 
 ### Tela de Reservas
